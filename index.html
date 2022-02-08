@@ -10,6 +10,9 @@
 </head>
 <body>
     <div id="root">
+        <ul v-if="mails.length === itemsNumber">
+            <li v-for="mail in mails">{{mail}}</li>
+        </ul>
     </div>
     <!-- script -->
     <script src="js/script.js"></script>
